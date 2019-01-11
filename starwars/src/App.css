@@ -1,8 +1,86 @@
 .App {
-  text-align: center;
+  display: grid;
+  margin: 0 auto;
+  background: #bf923f;
+  opacity: 0.7;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+.property-list {
+  justify-self: center;
+}
 /* write your parent styles in here for your App.js */
+.list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: black;
+  opacity: 0.9;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-column-gap: -10%;
+}
+.list-item {
+  justify-self: center;
+  display: grid;
+  line-height: 2rem;
+}
+.list-header {
+  justify-self: center;
+  text-decoration: underline;
+  color: white;
+  font-size: 2rem;
+  line-height: 0%;
+}
+li {
+  color: white;
+  justify-self: center;
+}
+h1 {
+  justify-self: center;
+  text-decoration: underline;
+  font-size: 3.8rem;
+}
+@media (max-width: 1100px) {
+  .list-wrapper {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+@media (max-width: 950px) {
+  .list-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .list-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (max-width: 550px) {
+  .list-wrapper {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 450px) {
+  .list-wrapper {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+@media (max-width: 350px) {
+  .list-wrapper {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}

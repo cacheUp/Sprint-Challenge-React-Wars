@@ -1,15 +1,20 @@
 import React, { Component } from "react";
 import "./App.css";
 import CharacterList from "./components/CharacterList";
+import Pagination from "react-js-pagination";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      activePage: 1
     };
   }
-
+  handlePageChange(pageNumber) {
+    console.log(`active page is ${pageNumber}`);
+    this.setState({ activePage: pageNumber });
+  }
   componentDidMount() {
     this.getCharacters("https://swapi.co/api/people");
   }

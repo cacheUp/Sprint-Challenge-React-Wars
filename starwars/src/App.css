@@ -51,11 +51,36 @@ h1 {
 @media (max-width: 950px) {
   .list-wrapper {
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
 @media (max-width: 650px) {
   .list-wrapper {
     grid-template-columns: repeat(1, 1fr);
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (max-width: 550px) {
+  .list-wrapper {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 450px) {
+  .list-wrapper {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+@media (max-width: 350px) {
+  .list-wrapper {
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }

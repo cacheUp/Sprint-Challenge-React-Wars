@@ -1,8 +1,33 @@
 .App {
-  text-align: center;
+  display: grid;
+  margin: 0 auto;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+.property-list {
+  justify-self: center;
+}
 /* write your parent styles in here for your App.js */
+.list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: black;
+  opacity: 0.6;
+}
+.list-item {
+  justify-self: center;
+  display: grid;
+  line-height: 2rem;
+}
+.list-header {
+  justify-self: center;
+  text-decoration: underline;
+  color: white;
+  font-size: 2rem;
+}
+li {
+  color: white;
+  justify-self: center;
+}

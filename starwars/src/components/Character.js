@@ -2,8 +2,8 @@ import React from "react";
 
 const Character = props => {
   return (
-    <div>
-      <h2>{props.characterOnProps.name}</h2>
+    <div className="list-item">
+      <h2 className="list-header">{props.characterOnProps.name}</h2>
       <ul className="property-list">
         <li>{`Gender: ${props.characterOnProps.gender}`}</li>
         <li>{`Hair Color: ${props.characterOnProps.hair_color}`}</li>

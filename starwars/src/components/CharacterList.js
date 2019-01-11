@@ -3,10 +3,10 @@ import Character from "./Character";
 
 const CharacterList = props => {
   return (
-    <div>
+    <div className="list-wrapper">
       {props.starwarsChars.map(characterInMap => (
         <Character
-          key={characterInMap.birth_year}
+          key={characterInMap.name}
           characterOnProps={characterInMap}
         />
       ))}
